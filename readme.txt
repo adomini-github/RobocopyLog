@@ -4,13 +4,13 @@ Import-Module RobocopyLog.psm1してからご利用ください。または、$e
 
 ◆コマンド形式◆
 使えるコマンドは下記のとおりです。
-Get-RobocopyLog -path <path>
+Get-RobocopyLogSummary -path <path>
 <path>にはRobocopyから出力されたログファイルのパスを指定してください。
 
 ◆戻り値◆
 戻り値としてPowerShellのカスタムオブジェクトを返します。
 例えば下記のようなコマンドを実行した場合、次のようなプロパティを利用できます。
-$RCLog = Get-RobocopyLog -path <path>
+$RCLog = Get-RobocopyLogSummary -path <path>
 
 $RCLog.DirsTotal      コピー対象となったディレクトリの全件数（double型）
 $RCLog.DirsCopied     コピー成功したディレクトリの件数（double型）
@@ -34,7 +34,7 @@ $RCLog.Speed        平均データ転送スピード。単位はByte/sec（long
 
 ◆注意事項◆
 モジュール内のソースコードは改造OKですが、改造したものをインターネットなどの世間一般に広く公開、もしくは広く参照可能な場所に保管する場合は下記連絡フォームに改造コードを公開することと、公開するURLなどの参照方法をご連絡いただければOKです。
-モジュール内のコマンド（Get-RobocopyLog）を使用したコードの公開に関しては特に制限事項はありません。
+モジュール内のコマンド（Get-RobocopyLogSummary）を使用したコードの公開に関しては特に制限事項はありません。
 バグ報告、要望についても同じく下記連絡フォームからご連絡ください。ただし、その対応を確約するものではありません。
 
 連絡フォーム

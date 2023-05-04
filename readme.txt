@@ -30,6 +30,7 @@ $RCLog.IsSkipped    スキップとなったディレクトリ、ファイルが
 $RCLog.IsMismatch   不一致となったディレクトリ、ファイルが1件でも存在する（Bool型（$true or $false））
 $RCLog.IsFailed     失敗となったディレクトリ、ファイルが1件でも存在する（Bool型（$true or $false））
 $RCLog.IsExtras     コピー先から削除となったディレクトリ、ファイルが1件でも存在する（Bool型（$true or $false））
+$RCLog.Speed        平均データ転送スピード。単位はByte/sec（long型）
 
 ◆注意事項◆
 モジュール内のソースコードは改造OKですが、改造したものをインターネットなどの世間一般に広く公開、もしくは広く参照可能な場所に保管する場合は下記連絡フォームに改造コードを公開することと、公開するURLなどの参照方法をご連絡いただければOKです。
